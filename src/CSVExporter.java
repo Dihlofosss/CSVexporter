@@ -23,7 +23,6 @@ public class CSVExporter {
 
 		String csvFilePath = GetParameterValue.openConfig(cfgFilePath, "file_path");
 		int numberOfTest = Integer.valueOf(GetParameterValue.openConfig(cfgFilePath, "number_of_tests"));
-		System.out.println(csvFilePath);
 		Path path = Paths.get(csvFilePath);
 
 		header.add("Parameter name:");
